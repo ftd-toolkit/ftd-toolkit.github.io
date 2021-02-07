@@ -1,0 +1,94 @@
+---
+layout: default
+title: Technique Hacking Simulator
+---
+
+<div class="simulator">
+  <h1 class="page-heading">Technique Hacking Simulator</h1>
+
+  <div>
+    <table class="input table">
+      <tr>
+        <td>
+          Stat
+        </td>
+        <td>
+          <input type="text" id="th-stat" class="valid-int"></input>
+        </td>
+        <td>
+          Modifier
+        </td>
+        <td>
+          <input type="text" id="th-mod" class="valid-int"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          AB 
+        </td>
+        <td>
+          <input type="text" id="th-ab" class="valid-int" disabled="true"></input>
+        </td>
+        <td>
+          Auto-calculate AB?
+        </td>
+        <td>
+          <input id="th-autoab" type="checkbox"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          FP Reroll Threshold 
+        </td>
+        <td>
+          <input type="text" id="th-threshold" class="valid-int"></input>
+        </td>
+        <td>
+          Number of FP
+        </td>
+        <td>
+          <input type="text" id="th-numfp" class="valid-int"></input>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Number of Tags 
+        </td>
+        <td>
+          <input type="text" id="th-numtags" class="valid-int"></input>
+        </td>
+        <td>
+          Number of Prep Days
+        </td>
+        <td>
+          <input type="text" id="th-numprep" class="valid-int"></input>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Success TN
+        </th>
+        <th>
+          <input type="text" id="th-success" class="valid-int"></input>
+        </th>
+        <th>
+          Completion TN
+        </th>
+        <th>
+          <input type="text" id="th-completion" class="valid-int"></input>
+        </th>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <span>
+      <button class="button-research" id="th-one">One Research Cycle</button><button class="button-research" id="th-full">Complete Project</button>
+    </span>
+  </div>
+
+
+</div>
+
+
+

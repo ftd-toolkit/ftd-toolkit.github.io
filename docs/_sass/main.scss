@@ -1,0 +1,63 @@
+.th-input span {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.simulator table {
+  margin: 2em;
+  width: 100%;
+}
+
+table, th, td{
+  border-collapse: collapse;
+  border: 3px solid darkslategrey;
+  text-align: left;
+}
+
+th {
+  background-color: darkslategrey;
+  color: white; 
+}
+
+col:nth-child(2n){
+  background: whitesmoke; 
+}
+
+th:not(.th-buttons), td:not(.th-buttons) {
+  padding: 1em
+}
+
+input {
+  text-align:center;
+  display: block;
+  margin: 0em auto 0em auto;
+  width: 80%;
+  border: 1px solid lightgrey;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px; 
+  padding: 5px;
+  font-size: 20px;
+}
+
+input[type="checkbox"]{
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+
+}
+
+button {
+  width: 100%;
+  margin: 0 auto 0em auto;
+  height: 40px;
+}
+
+.th-iheader td {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}

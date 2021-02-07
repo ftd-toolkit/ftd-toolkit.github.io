@@ -1,0 +1,117 @@
+---
+layout: default
+title: Consequence Healing Simulator
+---
+
+<div class="simulator">
+  <h1 class="page-heading">Day-by-day Healing Simulator</h1>
+  Notes...
+  <div>
+    <table id="hd-input">
+      <colgroup>
+        <col span="1" style="width: 35%;">
+        <col span="1" style="width: 15%;">
+        <col span="1" style="width: 35%;">
+        <col span="1" style="width: 15%;">
+      </colgroup>
+
+      <tr>
+        <th>
+          <span>Injury TN</span>
+        </th>
+        <th>
+          <input type="text" id="hd-injury" class="valid-int"></input>
+        </th>
+        <th>
+          <span>Trauma</span>
+        </th>
+        <th>
+          <input type="text" id="hd-trauma" class="valid-int"></input>
+        </th>
+      </tr>
+
+      <tr>
+        <td>
+          <span>Stat</span>
+        </td>
+        <td>
+          <input type="text" id="hd-stat" class="valid-int"></input>
+        </td>
+        <td>
+          <span>Severity</span>
+        </td>
+        <td>
+          <input type="text" id="hd-severity" class="valid-int"></input>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <span>Medical Knowledge</span>
+        </td>
+        <td>
+          <input type="text" id="hd-medknow" class="valid-int"></input>
+        </td>
+        <td>
+          <span>Medical Ninjutsu</span>
+        </td>
+        <td>
+          <input type="text" id="hd-mednin" class="valid-int"></input>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <span>Resting?</span>
+        </td>
+        <td>
+          <input type="checkbox" id="hd-rest"></input>
+        </td>
+        <td>
+          <span>Number of Days to Heal</span>
+        </td>
+        <td>
+          <input type="text" id="hd-days" class="valid-int"></input>
+        </td>
+      </tr>
+
+      <tr class="hd-buttons">
+        <td colspan="2">
+          <button class="button-research" id="hd-one">Heal Set Number of Days</button>
+        </td>
+        <td colspan="2">
+          <button class="button-research" id="hd-full">Heal Until Consequence Cleared</button>
+        </td>
+      </tr>
+    </table>
+
+
+  <div class="hd-log">
+    <table id="hd-log">
+      <colgroup>
+        <col span="1" style="width: 30%;">
+        <col span="1" style="width: 40%;">
+        <col span="1" style="width: 31%;">
+      </colgroup>
+      <tr>
+        <th colspan=4>
+          HEALING LOG
+        </th>
+      </tr>
+      <tr class="hd-iheader">
+        <td>
+          Day
+        </td>
+        <td>
+          Roll
+        </td>
+        <td>
+          Result
+        </td>
+      </tr>
+
+    </table>
+
+
+  </div>
+</div>

@@ -14,9 +14,9 @@ function autocalculateAB() {
   $("#th-ab").val(ab);
 }
 
-function getAllInputs() {
+function getAllInputs(prefix) {
   inputs = {}
-  $(".th-input input:text").each(function() {
+  $("."+prefix+"-input input:text").each(function() {
     v = $(this).val();
     if (v === "") {
       return;
@@ -41,7 +41,7 @@ function addResultsToLog(days, roll, result) {
 }
 
 function doOneDay() {
-  inputs = getAllInputs();
+  inputs = getAllInputs("th");
   if (Object.entries(inputs).length !== 9) {
     alert("Not all fields are filled in, or there is a datatype error. Fix and try again. Sorry for using alerts, but I didn't have a lot of patience to find a better way to do data validation.");
     return;

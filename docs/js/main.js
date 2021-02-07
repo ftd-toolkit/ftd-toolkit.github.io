@@ -17,3 +17,25 @@ function getTotal(dice) {
 function dice() {
     return getTotal(rollDice());
 }
+
+
+function getAllInputs(prefix) {
+  inputs = {}
+  $("."+prefix+"-input input:text").each(function() {
+    v = $(this).val();
+    if (v === "") {
+      return;
+    } 
+    inputs[this.id] = parseInt(v);
+  });
+  return inputs;
+}
+
+function stringifySum(base, dice) {
+  if (dice < 0) {
+    dice = - dice;
+    return base + " - " + dice;
+  }
+  return base + " + " + dice;
+}
+

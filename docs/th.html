@@ -7,16 +7,37 @@ title: Technique Hacking Simulator
   <h1 class="page-heading">Technique Hacking Simulator</h1>
 
   <div>
-    <table class="input table">
+    <table class="th-input">
+      <colgroup>
+        <col span="1" style="width: 35%;">
+        <col span="1" style="width: 15%;">
+        <col span="1" style="width: 35%;">
+        <col span="1" style="width: 15%;">
+      </colgroup>
+                                     
+      <tr>
+        <th>
+          <span>Success TN</span>
+        </th>
+        <th>
+          <input type="text" id="th-success" class="valid-int"></input>
+        </th>
+        <th>
+          <span>Completion TN</span>
+        </th>
+        <th>
+          <input type="text" id="th-completion" class="valid-int"></input>
+        </th>
+      </tr>
       <tr>
         <td>
-          Stat
+          <span>Stat</span>
         </td>
         <td>
           <input type="text" id="th-stat" class="valid-int"></input>
         </td>
         <td>
-          Modifier
+          <span>Modifier</span>
         </td>
         <td>
           <input type="text" id="th-mod" class="valid-int"></input>
@@ -24,13 +45,13 @@ title: Technique Hacking Simulator
       </tr>
       <tr>
         <td>
-          AB 
+          <span>AB</span>
         </td>
         <td>
           <input type="text" id="th-ab" class="valid-int" disabled="true"></input>
         </td>
         <td>
-          Auto-calculate AB?
+          <span>Auto-calculate AB?</span>
         </td>
         <td>
           <input id="th-autoab" type="checkbox"></input>
@@ -38,13 +59,13 @@ title: Technique Hacking Simulator
       </tr>
       <tr>
         <td>
-          FP Reroll Threshold 
+          <span>FP Reroll Threshold</span>
         </td>
         <td>
           <input type="text" id="th-threshold" class="valid-int"></input>
         </td>
         <td>
-          Number of FP
+          <span>Number of FP</span>
         </td>
         <td>
           <input type="text" id="th-numfp" class="valid-int"></input>
@@ -52,42 +73,54 @@ title: Technique Hacking Simulator
       </tr>
       <tr>
         <td>
-          Number of Tags 
+          <span>Number of Tags</span>
         </td>
         <td>
           <input type="text" id="th-numtags" class="valid-int"></input>
         </td>
         <td>
-          Number of Prep Days
+          <span>Number of Prep Days</span>
         </td>
         <td>
           <input type="text" id="th-numprep" class="valid-int"></input>
         </td>
       </tr>
-      <tr>
-        <th>
-          Success TN
-        </th>
-        <th>
-          <input type="text" id="th-success" class="valid-int"></input>
-        </th>
-        <th>
-          Completion TN
-        </th>
-        <th>
-          <input type="text" id="th-completion" class="valid-int"></input>
-        </th>
+      <tr class="th-buttons">
+        <td class="th-buttons" colspan="2">
+          <button class="button-research" id="th-one">One Research Cycle</button>
+        </td>
+        <td class="th-buttons" colspan="2">
+          <button class="button-research" id="th-full">Complete Project</button>
+        </td>
       </tr>
     </table>
   </div>
 
-  <div>
-    <span>
-      <button class="button-research" id="th-one">One Research Cycle</button><button class="button-research" id="th-full">Complete Project</button>
-    </span>
+  <div class="th-log">
+    <table>
+      <colgroup>
+        <col span="1" style="width: 30%;">
+        <col span="1" style="width: 40%;">
+        <col span="1" style="width: 31%;">
+      </colgroup>
+      <tr>
+        <th colspan=4>
+          RESEARCH LOG
+        </th>
+      </tr>
+      <tr class="th-iheader">
+        <td>
+          Day
+        </td>
+        <td>
+          Roll
+        </td>
+        <td>
+          Result
+        </td>
+      </tr>
+    </table>
   </div>
-
-
 </div>
 
 

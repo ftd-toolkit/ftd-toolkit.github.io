@@ -13,3 +13,7 @@ function stringifyDice(dice, total) {
 function getTotal(dice) {
     return dice.reduce((a, b) => a+b);
 }
+
+function dice() {
+    return getTotal(rollDice());
+}
